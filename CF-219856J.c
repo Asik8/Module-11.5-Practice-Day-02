@@ -9,10 +9,12 @@ int main()
 
     int cnt[26] = {0};
     
-    for (lli i = 0; i < strlen(a); i++)
-    {
-        int val = a[i] - 'a';
-        cnt[val]++;
+    for (int i = 0; i < strlen(a); i++)
+    {   
+        if (a[i] >= 'a' && a[i] <= 'z'){
+            int val = a[i] - 'a';
+            cnt[val]++;
+        }
     }
 
     for (int i = 0; i < 26; i++)
