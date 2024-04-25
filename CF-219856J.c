@@ -4,7 +4,7 @@
 
 int main()
 {
-    char a[100001];
+    char a[10000001];
     scanf("%s",a);
 
     int cnt[26] = {0};
